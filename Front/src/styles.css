@@ -13,12 +13,12 @@
 :root {
     --black: #000000;
     --white: #ffffff;
-    --darkgrey: #333333;
-    --veryligthgreen: #d3ffd6;
-    --ligthgreen: #26B12C;
-    --green: #498536;
-    --darkgreen: #2c770f;
-    --linkgreen: #2b3d23;
+    --lightPurple: #F3D9FF;
+    --darkPurple: #3E1653;
+    --pink: #c823cf;
+    --yellow: #eae954;
+    --green: #84e934;
+    --blue: #8de7e9;
 }
 
 .centre {
