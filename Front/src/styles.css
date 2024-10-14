@@ -19,7 +19,21 @@
     --yellow: #eae954;
     --green: #84e934;
     --blue: #8de7e9;
+    --lightPink: #F3D9FF;
 }
+
+h1 {
+    margin: 1rem;
+  }
+  h2,
+  h3 {
+    margin: 1rem;
+    font-weight: 500;
+
+  }
+  p {
+    margin: 1rem;
+  }
 
 .centre {
     display: flex;
