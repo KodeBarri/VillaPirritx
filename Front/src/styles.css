@@ -35,12 +35,42 @@ h1 {
     margin: 1rem;
   }
 
-.centre {
+.textCentre{
+    text-align: center;
+}
+
+.centre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
+.card{
+    max-width: 25rem;
+}
+
+.capaBlanca{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.capaRosa{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--lightPink);
+    padding: 2rem;
+
+}
+
+.btnRosa{
+    background-color: var(--lightPink);
+    padding: 0.3rem 1rem;
+    border-radius: 06rem;
+}
+
 /* Media query para pantallas grandes */
 @media (min-width: 769px) {
 
