@@ -23,17 +23,20 @@
 }
 
 h1 {
+    color: var(--darkPurple);
+}
+h2{
     margin: 1rem;
-  }
-  h2,
-  h3 {
+}
+
+h3 {
     margin: 1rem;
     font-weight: 500;
 
-  }
-  p {
+}
+p {
     margin: 1rem;
-  }
+}
 
 .textCentre{
     text-align: center;
@@ -48,6 +51,33 @@ h1 {
 
 .card{
     max-width: 25rem;
+}
+
+.cards{
+    max-width: 20rem;
+    background-color: var(--lightPurple);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.redonda{
+    max-width: 10rem;
+    border-radius: 100%;
+}
+
+.ImgBR{
+    max-width: 90%;
+    border-radius: 0.7rem;
+    margin: 1rem;
+}
+
+.horizontalSpaceAround{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
 }
 
 .capaBlanca{
@@ -71,6 +101,12 @@ h1 {
     border-radius: 06rem;
 }
 
+.btnMorado{
+    color: var(--white);
+    background-color: var(--darkPurple);
+    padding: 0.3rem 1rem;
+    border-radius: 06rem;
+}
 /* Media query para pantallas grandes */
 @media (min-width: 769px) {
 
