@@ -1,2 +1,2 @@
 # VillaPirritx
-Web para la asociación VillaPirritx, refugio de animales
+Web para la asociación VillaPirritx, refugio de animales.
