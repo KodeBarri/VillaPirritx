@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { EventosComponent } from './eventos.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('EventosComponent', () => {
+  let component: EventosComponent;
+  let fixture: ComponentFixture<EventosComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [EventosComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(EventosComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,7 +21,3 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-
-
-

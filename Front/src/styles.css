@@ -19,13 +19,93 @@
     --yellow: #eae954;
     --green: #84e934;
     --blue: #8de7e9;
+    --lightPink: #F3D9FF;
 }
 
-.centre {
+h1 {
+    color: var(--darkPurple);
+}
+h2{
+    margin: 1rem;
+}
+
+h3 {
+    margin: 1rem;
+    font-weight: 500;
+
+}
+p {
+    margin: 1rem;
+}
+
+.textCentre{
+    text-align: center;
+}
+
+.centre{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.card{
+    max-width: 25rem;
+}
+
+.cards{
+    max-width: 20rem;
+    background-color: var(--lightPurple);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.redonda{
+    max-width: 10rem;
+    border-radius: 100%;
+}
+
+.ImgBR{
+    max-width: 90%;
+    border-radius: 0.7rem;
+    margin: 1rem;
+}
+
+.horizontalSpaceAround{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.capaBlanca{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.capaRosa{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--lightPink);
+    padding: 2rem;
+
+}
+
+.btnRosa{
+    background-color: var(--lightPink);
+    padding: 0.3rem 1rem;
+    border-radius: 06rem;
+}
+
+.btnMorado{
+    color: var(--white);
+    background-color: var(--darkPurple);
+    padding: 0.3rem 1rem;
+    border-radius: 06rem;
 }
 /* Media query para pantallas grandes */
 @media (min-width: 769px) {

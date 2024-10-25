@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HeaderComponent } from './header.component';
+import { ColaboraComponent } from './colabora.component';
 
-describe('HeaderComponent', () => {
-  let component: HeaderComponent;
-  let fixture: ComponentFixture<HeaderComponent>;
+describe('ColaboraComponent', () => {
+  let component: ColaboraComponent;
+  let fixture: ComponentFixture<ColaboraComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent]
+      imports: [ColaboraComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(HeaderComponent);
+    fixture = TestBed.createComponent(ColaboraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -21,7 +21,3 @@ describe('HeaderComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
-
-
-
