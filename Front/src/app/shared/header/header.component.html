@@ -1,18 +1,19 @@
 <div class="eslogan">
-    <h3>LAS OPORTUNIDADES SOLO PASAN UNA VEZ EN LA VIDA, VEN Y SALVA UNA VIDA</h3>
+  <p>LAS OPORTUNIDADES SOLO PASAN UNA VEZ EN LA VIDA, VEN Y SALVA UNA VIDA</p>
 </div>
-<div class="navbar">
-    <div>
-        <ul>
-            <li>Inicio</li>
-            <li>Quienes somos</li>
-            <li>Colabora</li>
-            <li>Adopta</li>
-            <li>Nuestro poryecto</li>
-            <li>Eventos</li>
-            <li>Contacta</li>
-            <li><img src="#" alt="facebook"></li>
-            <li><img src="#" alt="instagram"></li>
-        </ul>
-    </div>
-</div>
+<nav class="navbar">
+
+  <div class="navbar-brand">
+    <button class="hamburger" (click)="toggleMenu()">☰</button>
+  </div>
+  <ul [class.active]="isMenuOpen" class="navbar-links">
+    <li><a routerLink="/home" (click)="closeMenu()">Inicio</a></li>
+    <li><a routerLink="/about" (click)="closeMenu()">Quienes Somos</a></li>
+    <li><a routerLink="/colabora" (click)="closeMenu()">Colabora</a></li>
+    <li><a routerLink="/adopcion" (click)="closeMenu()">Adopta</a></li>
+    <li><a routerLink="/proyecto" (click)="closeMenu()">Nuestro Proyecto</a></li>
+    <li><a routerLink="/eventos" (click)="closeMenu()">Eventos</a></li>
+    <li><a routerLink="/contacto" (click)="closeMenu()">Contacta</a></li>
+    <li><a routerLink="/interes" (click)="closeMenu()">De interés</a></li>
+  </ul>
+</nav>
