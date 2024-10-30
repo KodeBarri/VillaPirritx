@@ -39,6 +39,10 @@ p{
   text-decoration: none; 
 }
 
+.patita {
+  max-width: 2rem;
+}
+
 .navbar-links li:hover { 
   padding: 0.3rem 0.5rem;
   background-color: var(--lightPink);
