@@ -53,6 +53,10 @@ p {
     max-width: 25rem;
 }
 
+.card2{
+    max-width: 35rem;
+}
+
 .cards{
     max-width: 20rem;
     background-color: var(--lightPurple);
@@ -76,20 +80,20 @@ p {
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin: 1rem;
 }
 
 .capaBlanca{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--white);
     padding: 2rem;
 }
 
 .capaRosa{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: var(--lightPink);
     padding: 2rem;
 
