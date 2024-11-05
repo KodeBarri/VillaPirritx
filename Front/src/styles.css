@@ -35,7 +35,7 @@ h3 {
 
 }
 p {
-    margin: 1rem;
+    margin: 0.3rem;
 }
 
 .textCentre{
@@ -76,12 +76,25 @@ p {
     margin: 1rem;
 }
 
+.logoPeq{
+    max-width: 4.5rem;
+}
+
 .horizontalSpaceAround{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 1rem;
+}
+
+.horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0.5rem;
 }
 
 .capaBlanca{
@@ -97,6 +110,16 @@ p {
     background-color: var(--lightPink);
     padding: 2rem;
 
+}
+
+.miniRosa{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightPink);
 }
 
 .btnRosa{
