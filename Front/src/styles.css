@@ -134,7 +134,13 @@ p {
     padding: 0.3rem 1rem;
     border-radius: 06rem;
 }
+
+.icono {
+    max-width: 1rem;
+}
 /* Media query para pantallas grandes */
 @media (min-width: 769px) {
+
+
 
         }

@@ -18,7 +18,7 @@ export const routes: Routes = [
   { path: 'adopcion', component: AdopcionComponent },
   { path: 'proyecto', component: ProyectoComponent },
   { path: 'eventos', component: EventosComponent },
-  { path: 'contacta', component: ContactoComponent },
+  { path: 'contacto', component: ContactoComponent },
   { path: 'interes', component: InteresComponent },
 
   { path: 'subida', component: SubidaComponent },
