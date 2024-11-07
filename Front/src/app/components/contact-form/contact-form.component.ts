@@ -36,7 +36,7 @@ export class ContactFormComponent {
       console.log('Datos del formulario:', formData);
 
       // Lógica para enviar el formulario por correo electrónico
-      window.location.href = `mailto:villapirritx@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
+      window.location.href = `mailto:aintzagoffard@gmail.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(
         `Nombre: ${formData.name}\nPrimer Apellido: ${formData.firstSurname}\nSegundo Apellido: ${formData.secondSurname}\nCorreo Electrónico: ${formData.email}\nTeléfono: ${formData.phone}\nAsunto: ${formData.subject}\nObservaciones: ${formData.observations}`
       )}`;
 
