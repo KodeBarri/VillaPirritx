@@ -35,7 +35,7 @@ h3 {
 
 }
 p {
-    margin: 1rem;
+    margin: 0.3rem;
 }
 
 .textCentre{
@@ -76,12 +76,25 @@ p {
     margin: 1rem;
 }
 
+.logoPeq{
+    max-width: 4.5rem;
+}
+
 .horizontalSpaceAround{
     width: 100vw;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 1rem;
+}
+
+.horizontal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin: 0.5rem;
 }
 
 .capaBlanca{
@@ -99,6 +112,16 @@ p {
 
 }
 
+.miniRosa{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightPink);
+}
+
 .btnRosa{
     background-color: var(--lightPink);
     padding: 0.3rem 1rem;
@@ -111,7 +134,13 @@ p {
     padding: 0.3rem 1rem;
     border-radius: 06rem;
 }
+
+.icono {
+    max-width: 1rem;
+}
 /* Media query para pantallas grandes */
 @media (min-width: 769px) {
+
+
 
         }
