@@ -13,12 +13,12 @@ export class EventosComponent {
 
 
   dogs = [
-    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'leioa', fecha: 15/11/2024, horario: '10:00 a 14:00' },
-    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Lamiadko', fecha: 15/11/2024, horario: '10:00 a 14:00' },
-    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Astrabudua', fecha: 15/11/2024, horario: '10:00 a 14:00' },
-    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Sestao', fecha: 15/11/2024, horario: '10:00 a 14:00' },
-    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Portugalete', fecha: 15/11/2024, horario: '10:00 a 14:00' },
-    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Sondika', fecha: 15/11/2024, horario: '10:00 a 14:00' },
+    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'leioa', fecha: '15/11/2024', horario: '10:00 a 14:00' },
+    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Lamiadko', fecha: '15/11/2024', horario: '10:00 a 14:00' },
+    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Astrabudua', fecha: '15/11/2024', horario: '10:00 a 14:00' },
+    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Sestao', fecha: '15/11/2024', horario: '10:00 a 14:00' },
+    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Portugalete', fecha: '15/11/2024', horario: '10:00 a 14:00' },
+    { image: './mix/perro_ejem.jpg', titulo: 'Mercadillo Solidario', lugar: 'Sondika', fecha: '15/11/2024', horario: '10:00 a 14:00' },
 
   ];
 
