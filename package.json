@@ -4,12 +4,15 @@
   "description": "Web para la asociación VillaPirritx, refugio de animales",
   "main": "index.js",
   "scripts": {
-    "start:front": "cd front && ng serve",
-    "build:front": "cd front && ng build --base-href ./",
+    "start:front": "cd Front && ng serve",
+    "build:front": "cd Front && ng build --output-path=../docs --base-href ./",
     "delete:docs": "rimraf docs",
-    "redirects:dist": "cpx \"front/redirects/**/*\" ./docs",
-    "copy:dist": "cpx \"front/dist/villapirritx/**/*\" ./docs",
-    "build:github": "npm run delete:docs && npm run build:front && npm run copy:dist && npm run redirects:dist"
+    "redirects:dist": "cpx \"Front/redirects/**/*\" ./docs",
+    "copy:dist": "cpx \"Front/dist/villapirritx/**/*\" ./docs",
+    "move:browser": "mv ./docs/browser/* ./docs && rimraf ./docs/browser",
+    "build:github": "npm run delete:docs && npm run build:front && npm run copy:dist && npm run redirects:dist && npm run move:browser",
+    "watch": "cd Front && ng build --watch --configuration development",
+    "test": "cd Front && ng test"
   },
   "devDependencies": {
     "cpx": "^1.5.0",
