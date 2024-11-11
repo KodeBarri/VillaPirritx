@@ -1,14 +1,14 @@
 {
   "name": "villapirritx",
   "version": "0.0.0",
-  "scripts": {
+"scripts": {
   "ng": "ng",
   "start": "ng serve",
   "build": "ng build",
   "build:href": "ng build --base-href ./",
-  "delete:docs": "rimraf docs",
-  "redirects:dist": "cpx \"redirects/**/*\" ./docs",
-  "copy:dist": "cpx \"dist/villapirritx/**/*\" ./docs",
+  "delete:docs": "rimraf VillaPirritx/docs",
+  "redirects:dist": "cpx \"redirects/**/*\" ./VillaPirritx/docs",
+  "copy:dist": "cpx \"dist/villapirritx/**/*\" ./VillaPirritx/docs",
   "build:github": "npm run delete:docs && npm run build:href && npm run copy:dist && npm run redirects:dist",
   "watch": "ng build --watch --configuration development",
   "test": "ng test"
