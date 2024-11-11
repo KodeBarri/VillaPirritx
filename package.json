@@ -1,0 +1,21 @@
+{
+  "name": "villapirritx",
+  "version": "1.0.0",
+  "description": "Web para la asociación VillaPirritx, refugio de animales",
+  "main": "index.js",
+  "scripts": {
+    "start:front": "cd front && ng serve",
+    "build:front": "cd front && ng build --base-href ./",
+    "delete:docs": "rimraf docs",
+    "redirects:dist": "cpx \"front/redirects/**/*\" ./docs",
+    "copy:dist": "cpx \"front/dist/villapirritx/**/*\" ./docs",
+    "build:github": "npm run delete:docs && npm run build:front && npm run copy:dist && npm run redirects:dist"
+  },
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "rimraf": "^3.0.2"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
