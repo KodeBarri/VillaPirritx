@@ -68,7 +68,6 @@ cursor: pointer;
   top: 0; 
   right: 0; 
   background: var(--lightPink); 
-  width: 250px; 
   padding: 1rem;
   transform: translateX(100%);
 }
