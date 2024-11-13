@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -10,23 +10,31 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./header.component.css']
 })
 
-  export class HeaderComponent {
-    isMenuOpen = false;
-  
-    toggleMenu() {
-      this.isMenuOpen = !this.isMenuOpen;
-    }
-  
-    closeMenu() {
-      this.isMenuOpen = false;
-    }
-  
-    @HostListener('document:click', ['$event'])
-    onDocumentClick(event: MouseEvent) {
-      const target = event.target as HTMLElement;
-      const isOutsideClick = !target.closest('.navbar');
-      if (isOutsideClick) {
-        this.isMenuOpen = false;
-      }
-    }
+  export class HeaderComponent implements OnInit {
+  mobileNav: boolean = false;
+  mobile: boolean = true;
+  scrolledNav: boolean = false;
+
+  ngOnInit() {
+    this.checkScreen();
   }
+
+  toggleMobileNav() {
+    this.mobileNav = !this.mobileNav;
+  }
+
+  closeMobileNav() {
+    this.mobileNav = false;
+  }
+
+  @HostListener('window:resize')
+  checkScreen() {
+    this.mobile = window.innerWidth <= 990;
+    if (this.mobile) this.mobileNav = false;
+  }
+
+  @HostListener('window:scroll')
+  onScroll() {
+    this.scrolledNav = window.scrollY > 50;
+  }
+}

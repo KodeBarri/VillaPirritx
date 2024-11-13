@@ -11,58 +11,81 @@
 p{
   margin: 0.2rem;
 }
-.navbar { 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  padding: 1rem; 
-  background: var(--white); 
+header {
+  background-color: var(--white);
+  transition: all 0.3s ease;
 }
 
-.navbar-brand { 
-  font-size: 1.2rem; 
-  
+header.scrolled-nav {
+  background-color: var(--lightPink);
 }
 
-.navbar-links { 
+.branding .logo {
+  max-width: 4rem;
+}
+
+.navigation { 
   list-style: none; 
   padding: 0.3rem 1rem; 
   margin: 0; 
   display: flex; 
   gap: 1rem; 
   transition: transform 0.3s; 
+  color: var(--pink); 
 }
-
-.navbar-links li { 
-  padding: 0.3rem 0.5rem;
-  color: var(--darkPurple); 
-  text-decoration: none; 
-}
-
-.patita {
-  max-width: 2rem;
-}
-
-.navbar-links li:hover { 
+.navigation li:hover { 
   padding: 0.3rem 0.5rem;
   background-color: var(--lightPink);
   border-radius: 1rem;
 }
 
-.navbar-links li a { 
+.navigation li a { 
   padding: 0.3rem 0.5rem;
   color: var(--darkPurple); 
   text-decoration: none; 
 }
 
-/* Estilos para el menú hamburguesa */
-.hamburger { 
-  display: none; 
-  cursor: pointer; 
+.navigation li { 
+  padding: 0.3rem 0.5rem;
+  color: var(--darkPurple); 
+  text-decoration: none; 
+}
+
+.icon {
+  display: none;
+}
+
+.hojitas {
+  transition: transform 0.3s ease;
+}
+
+.icon-active {
+  transform: rotate(45deg);
+}
+
+/* Mobile dropdown nav */
+.dropdown-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (max-width: 990px) {
+  .navigation {
+    display: none;
+  }
+  .icon {
+    display: block;
+  }
+}
+
+.patita {
+  max-width: 2rem;
+  background-color: transparent;
 }
 
 @media (max-width: 768px) {
-  .navbar-links { 
+  .navigation{ 
     flex-direction: column; 
     position: absolute; 
     top: 0; 
@@ -72,9 +95,9 @@ p{
     padding: 1rem;
     transform: translateX(100%);
   }
-  .navbar-links.active { 
+  .navigation.active { 
     transform: translateX(0); }
-  .hamburger { 
+  .icon { 
     z-index: 100;
     position: fixed; 
     top: 0.5rem; 
