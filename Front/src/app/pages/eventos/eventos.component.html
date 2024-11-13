@@ -1,1 +1,37 @@
-<p>eventos works!</p>
+<div class="bloque_1">
+    <img src="./logos/logo.png" alt="">
+    <img src="./mix/eventos.png" alt="">
+</div>
+
+<div class="bloque_2">
+    <h1>Eventos</h1>
+    <div class="texto">
+        <h4>Los eventos son esenciales para nuestra protectora de animales. Nos permiten crear conciencia sobre el bienestar animal y fomentar la adopción responsable. A través de jornadas de adopción y ferias de sensibilización, conectamos con la comunidad y mostramos nuestro trabajo.
+            Además, estos eventos son oportunidades para recaudar fondos que cubren gastos de atención veterinaria y cuidado de los animales rescatados. También fortalecen la red de apoyo entre voluntarios y adoptantes, creando una comunidad unida en torno a nuestra misión. Sin duda, los eventos son clave para avanzar en la protección y mejora de la vida de los animales
+        </h4>
+    </div>
+
+    <div class="caja_button">
+    <button>Dona</button>
+    <button>Ser Voluntario</button>
+    </div>
+    
+</div>
+
+
+<div class="dog-card-container">
+    <h1>Proximos Eventos</h1>
+    <div class="dog-cards">
+      <div class="dog-card" *ngFor="let dog of dogs">
+        <h3>{{ dog.titulo }}</h3>
+        <img [src]="dog.image" alt="{{ dog.titulo }}" />
+        <p>{{ dog.lugar }}</p>
+        <p>{{ dog.fecha }}</p>
+        <p>{{ dog.horario }}</p>
+        <div class="buttons">
+        <button (click)="shareDetails(dog)">Difundir</button>    
+        </div>
+        
+      </div>
+    </div>
+  </div>
