@@ -1,32 +1,19 @@
 <div class="eslogan">
   <p>LAS OPORTUNIDADES SOLO PASAN UNA VEZ EN LA VIDA, VEN Y SALVA UNA VIDA</p>
 </div>
+<nav class="navbar">
 
-<header [ngClass]="{ 'scrolled-nav': scrolledNav }">
-  <nav>
-    <ul *ngIf="!mobile" class="navigation horizontal">
-      <li><a routerLink="/home" class="NavButton link" (click)="closeMobileNav()">Inicio</a></li>
-      <li><a routerLink="/about" class="NavButton link" (click)="closeMobileNav()">Quienes Somos</a></li>
-      <li><a routerLink="/colabora" class="NavButton link" (click)="closeMobileNav()">Colabora</a></li>
-      <li><a routerLink="/adopcion" class="NavButton link" (click)="closeMobileNav()">Adopta</a></li>
-      <li><a routerLink="/proyecto" class="NavButton link" (click)="closeMobileNav()">Nuestro Proyecto</a></li>
-      <li><a routerLink="/eventos" class="NavButton link" (click)="closeMobileNav()">Eventos</a></li>
-      <li><a routerLink="/contacto" class="NavButton link" (click)="closeMobileNav()">Contacto</a></li>
-      <li><a routerLink="/interes" class="NavButton link" (click)="closeMobileNav()">De interés</a></li>
-    </ul>
-    <div class="icon" *ngIf="mobile">
-      <button (click)="toggleMobileNav()">
-        <img [ngClass]="{ 'icon-active': mobileNav }" src="iconos/patita.png" class="hojitas patita" alt="Menu Icon">
-      </button>
-    </div>
-    <ul *ngIf="mobileNav" class="dropdown-nav">
-      <li><a routerLink="/inicio" class="NavButton link" (click)="closeMobileNav()">Inicio</a></li>
-      <li><a routerLink="/servicios" class="NavButton link" (click)="closeMobileNav()">Servicios</a></li>
-      <li><a routerLink="/calendario" class="NavButton link" (click)="closeMobileNav()">Calendario</a></li>
-      <li><a routerLink="/reservas" class="NavButton link" (click)="closeMobileNav()">Reservas</a></li>
-      <li><a routerLink="/geotienda" class="NavButton link" (click)="closeMobileNav()">Geotienda</a></li>
-      <li><a routerLink="/blog" class="NavButton link" (click)="closeMobileNav()">Blog</a></li>
-      <li><a routerLink="/contacto" class="NavButton link" (click)="closeMobileNav()">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+  <div class="navbar-brand">
+    <button class="hamburger" (click)="toggleMenu()"><img class="patita" src="iconos/patita.png" alt=""></button>
+  </div>
+  <ul [class.active]="isMenuOpen" class="navbar-links">
+    <li><a routerLink="/home" (click)="closeMenu()">Inicio</a></li>
+    <li><a routerLink="/about" (click)="closeMenu()">Quienes Somos</a></li>
+    <li><a routerLink="/colabora" (click)="closeMenu()">Colabora</a></li>
+    <li><a routerLink="/adopcion" (click)="closeMenu()">Adopta</a></li>
+    <li><a routerLink="/proyecto" (click)="closeMenu()">Nuestro Proyecto</a></li>
+    <li><a routerLink="/eventos" (click)="closeMenu()">Eventos</a></li>
+    <li><a routerLink="/contacto" (click)="closeMenu()">Contacta</a></li>
+    <li><a routerLink="/interes" (click)="closeMenu()">De interés</a></li>
+  </ul>
+</nav>
