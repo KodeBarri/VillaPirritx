@@ -38,6 +38,10 @@ p {
     margin: 0.3rem;
 }
 
+img {
+    max-width: 100%;
+}
+
 .textCentre{
     text-align: center;
 }
@@ -47,6 +51,7 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 .card{
@@ -62,7 +67,7 @@ p {
     background-color: var(--lightPurple);
     border-radius: 0.7rem;
     padding: 1rem;
-    margin: 1rem;
+    margin: 0.5rem;
 }
 
 .redonda{
@@ -143,8 +148,17 @@ p {
     max-width: 1rem;
 }
 /* Media query para pantallas grandes */
-@media (min-width: 769px) {
+@media (max-width: 400px) {
 
+    .capaBlanca{
 
+        padding: 0.5rem;
+    }
+
+    .capaRosa{
+
+        padding: 0.5rem;
+    
+    }
 
         }
