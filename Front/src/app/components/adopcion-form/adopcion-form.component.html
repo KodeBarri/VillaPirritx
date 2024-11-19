@@ -3,21 +3,19 @@
     <div class="pares">
       <label for="nombreanimal">Nombre:</label>
       <input id="nombreanimal" formControlName="nombreanimal" required />
-      <div *ngIf="adopciontForm.get('nombreanimal')?.invalid && adopciontForm.get('nombreanimal')?.touched">
-        <small>El nombre es obligatorio.</small>
-      </div>
+ 
     </div>
 
     <div class="pares">
       <label for="tipoanimal">Tipo de animal:</label>
       <select id="tipoanimal" formControlName="tipoanimal" required>
         <option value="gato">Gato</option>
-        <option value="gato">Perro</option>
-        <option value="gato">Otro</option>
+        <option value="perro">Perro</option>
+        <option value="otro">Otro</option>
+      </select>
       <div *ngIf="adopciontForm.get('tipoanimal')?.invalid && adopciontForm.get('tipoanimal')?.touched">
         <small>El tipo de animal es obligatorio.</small>
       </div>
-      </select>
     </div>
 
     <div class="pares">
@@ -25,21 +23,20 @@
       <input id="edadanimal" formControlName="edadanimal" />
     </div>
 
-
     <div class="pares">
       <label for="sexoanimal">Sexo:</label>
       <select id="sexoanimal" formControlName="sexoanimal" required>
         <option value="macho">Macho</option>
         <option value="hembra">Hembra</option>
+      </select>
       <div *ngIf="adopciontForm.get('sexoanimal')?.invalid && adopciontForm.get('sexoanimal')?.touched">
         <small>El sexo del animal es obligatorio.</small>
       </div>
-      </select>
     </div>
 
     <div class="pares">
       <label for="tiemporefugio">Tiempo que lleva en el refugio:</label>
-      <input id="tiemporefugio" formControlName="tiemporefugio" type="text" />  
+      <input id="tiemporefugio" formControlName="tiemporefugio" type="text" />
     </div>
 
     <div class="pares">
@@ -53,7 +50,11 @@
 
     <div class="descripcionanimal">
       <label for="descripcionanimal">Descripción:</label>
-      <textarea id="descripcionanimal" formControlName="descripcionanimal" type="text" ></textarea>
+      <textarea id="descripcionanimal" formControlName="descripcionanimal"></textarea>
+      <div *ngIf="adopciontForm.get('descripcionanimal')?.invalid && adopciontForm.get('descripcionanimal')?.touched">
+        <small>La descripción del animal es obligatoria.</small>
+      </div>
+
     </div>
 
     <div class="pares">
@@ -64,7 +65,6 @@
         (change)="onFilesChange($event)" 
         accept="image/*" 
         multiple 
-        required
       />
       <div *ngIf="imagePreviews.length > 0">
         <p>Imágenes seleccionadas:</p>
@@ -79,12 +79,12 @@
       <textarea id="observacionesanimal" formControlName="observacionesanimal"></textarea>
 
       <button class="btnMorado" type="submit" [disabled]="adopciontForm.invalid">Enviar</button>
+
     </div>
+
     <!-- Mensaje de confirmación -->
     <div *ngIf="messageSent" class="confirmation-message">
       ¡Mensaje enviado con éxito!
     </div>
   </form>
 </div>
-
-  

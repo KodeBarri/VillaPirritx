@@ -1,49 +1,58 @@
 {
-  "hash": "5edb3ed8",
-  "configHash": "a79fcfba",
+  "hash": "f2562511",
+  "configHash": "278a1081",
   "lockfileHash": "ec4d8d99",
-  "browserHash": "5e8fddbe",
+  "browserHash": "22cb3fcb",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "11e6dfb4",
+      "fileHash": "43f31090",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "01224e8d",
+      "fileHash": "93f1671e",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "80643540",
+      "fileHash": "e6ddb614",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "7dde2b4a",
+      "fileHash": "c75d5df5",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "38f4bdb0",
+      "fileHash": "bcc1a1e4",
+      "needsInterop": false
+    },
+    "tslib": {
+      "src": "../../../../../../node_modules/tslib/tslib.es6.mjs",
+      "file": "tslib.js",
+      "fileHash": "a52edaf9",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-65RCXNHE": {
-      "file": "chunk-65RCXNHE.js"
+    "chunk-CAFQZJLV": {
+      "file": "chunk-CAFQZJLV.js"
     },
-    "chunk-MCO6UI4J": {
-      "file": "chunk-MCO6UI4J.js"
+    "chunk-2U3GEBTA": {
+      "file": "chunk-2U3GEBTA.js"
     },
-    "chunk-RXLE57JX": {
-      "file": "chunk-RXLE57JX.js"
+    "chunk-RPND7EMJ": {
+      "file": "chunk-RPND7EMJ.js"
+    },
+    "chunk-RKL7JSJN": {
+      "file": "chunk-RKL7JSJN.js"
     }
   }
 }
