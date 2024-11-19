@@ -56,12 +56,27 @@
       <textarea id="descripcionanimal" formControlName="descripcionanimal" type="text" ></textarea>
     </div>
 
+    <div class="pares">
+      <label for="imagenesanimal">Subir Imágenes:</label>
+      <input 
+        id="imagenesanimal" 
+        type="file" 
+        (change)="onFilesChange($event)" 
+        accept="image/*" 
+        multiple 
+        required
+      />
+      <div *ngIf="imagePreviews.length > 0">
+        <p>Imágenes seleccionadas:</p>
+        <div class="image-preview-container">
+          <img *ngFor="let preview of imagePreviews" [src]="preview" alt="Previsualización de imagen" width="150" />
+        </div>
+      </div>
+    </div>
+
     <div class="pares2">
       <label for="observacionesanimal">Observaciones:</label>
-      <textarea id="observacionesanimal" formControlName="observacionesanimal" required></textarea>
-      <div *ngIf="adopciontForm.get('observacionesanimal')?.invalid && adopciontForm.get('observacionesanimal')?.touched">
-        <small>Las observaciones son obligatorias.</small>
-      </div>
+      <textarea id="observacionesanimal" formControlName="observacionesanimal"></textarea>
 
       <button class="btnMorado" type="submit" [disabled]="adopciontForm.invalid">Enviar</button>
     </div>
