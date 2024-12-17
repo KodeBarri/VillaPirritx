@@ -1,12 +1,12 @@
-.bloque_1{
+/* .bloque_1{
     display: flex;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
     margin: 2rem;
-}
+} */
 
-.inicio{
+/* .inicio{
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -18,12 +18,12 @@
     margin-bottom: 3rem;
     padding-bottom: 3rem;
     padding-top: 3rem;
-}
+} */
 
-h2{
+/* h2{
    padding-bottom: 2rem;
-}
-
+} */
+/* 
 h4{
     width: 60%;
 }
@@ -36,4 +36,9 @@ h4{
     flex-direction: column;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+ */
+
+.imagen{
+    max-width: 37rem;
 }

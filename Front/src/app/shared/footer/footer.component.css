@@ -1,4 +1,4 @@
-.footer_1{
+/* .footer_1{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,8 +7,8 @@
     background-color: rgb(243, 217, 255);
     flex-wrap: wrap;
     
-}
-.datos_ingreso{
+} */
+/* .datos_ingreso{
     background-color: white;
     width: 75%;
     display: flex;
@@ -19,16 +19,16 @@
     border-radius: 2rem;
     text-align: center;
     justify-content: center;
-}
-h4{
+} */
+/* h4{
     margin-top: 1rem;
     text-align: center;
 }
 h2{
     margin-bottom: -0.8rem;
     text-align: center;
-}
-.parte_derecha{
+} */
+/* .parte_derecha{
     width: 45%;
     justify-content: center;
     align-items: center;
@@ -37,9 +37,9 @@ h2{
     flex-direction: column;
     margin-bottom: 3rem;
 
-}
+} */
 
-.parte_izquierda{
+/* .parte_izquierda{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,9 +47,9 @@ h2{
     align-items: center;
     margin: 1rem;
     color: black;
-}
+} */
 
-.precio{
+/* .precio{
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -58,9 +58,9 @@ h2{
     margin-top: 2rem;
     margin-bottom: 2rem;
   
-}
+} */
 
-.bloque{
+/* .bloque{
     width: auto;
     display:flex;
     flex-direction: column;
@@ -74,7 +74,7 @@ h2{
     padding-top: 2rem;
     padding-bottom: 2rem;
 
-}
+} */
 
 
 
@@ -84,11 +84,11 @@ h2{
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+/*     margin-top: 2rem;
+    margin-bottom: 3rem; */
 }
 
-.footer3{
+/* .footer3{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,4 +97,52 @@ h2{
     background-color: rgb(243, 217, 255);
     padding: 1rem;
 
+} */
+
+.cardB{
+    max-width: 20rem;
+    height: 20rem;
+    background-color: var(--white);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin: 0.5rem; 
 }
+
+.cardBp{
+    max-width: 11rem;
+    height: 11rem;
+    background-color: var(--white);
+    border-radius: 0.7rem;
+    padding: 1rem;
+    margin: 0.5rem; 
+}
+.cardBText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+
+}
+h6{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.ayudar{
+    display: flex;
+    flex-direction: row;
+    margin: 0rem 2rem;
+   
+}
+
+@media (max-width: 520px) {
+
+    .ayudar{
+        display: flex;
+        flex-direction: column;
+        margin: 0rem 2rem;
+       
+    }
+
+        }

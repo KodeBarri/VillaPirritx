@@ -71,6 +71,8 @@ img {
     margin: 0.5rem;
 }
 
+
+
 .redonda{
     max-width: 10rem;
     border-radius: 100%;
@@ -148,7 +150,7 @@ img {
 .icono {
     max-width: 1rem;
 }
-/* Media query para pantallas grandes */
+
 @media (max-width: 400px) {
 
     .capaBlanca{
