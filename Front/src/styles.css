@@ -14,7 +14,8 @@
     --black: #000000;
     --white: #ffffff;
     --lightPurple: #F3D9FF;
-    --darkPurple: #3E1653;
+    --middlePurple: #6a1b9a;
+    --darkPurple: #4f1b6b;
     --pink: #c823cf;
     --yellow: #eae954;
     --green: #84e934;
@@ -147,6 +148,7 @@ img {
     background-color: var(--darkPurple);
     padding: 0.3rem 1rem;
     border-radius: 06rem;
+    margin: 0.3rem;
 }
 
 .icono {
